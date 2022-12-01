@@ -6,6 +6,7 @@ import com.api.invoice.invoice.service.InvoiceService;
 import lombok.AllArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.ResponseEntity;
+import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -15,6 +16,7 @@ import javax.validation.Valid;
 import javax.xml.ws.Response;
 
 @Slf4j
+@Controller
 @RequestMapping("/api/invoice")
 @AllArgsConstructor
 public class InvoiceController

@@ -26,8 +26,8 @@ public class InvoiceMapper
         InvoiceOutput invoiceOutput = new InvoiceOutput();
         invoiceOutput.setId(invoice.getId());
         invoiceOutput.setCode(invoice.getCode());
-        invoiceOutput.setTitle(invoiceOutput.getTitle());
-        invoiceOutput.setDescription(invoiceOutput.getDescription());
+        invoiceOutput.setTitle(invoice.getTitle());
+        invoiceOutput.setDescription(invoice.getDescription());
         invoiceOutput.setIssuedAt(invoice.getIssuedAt());
         invoiceOutput.setCustomer(customer);
         invoiceOutput.setTotalAmount(invoice.getTotalAmount());
